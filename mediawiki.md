@@ -51,6 +51,6 @@ quit;
 
 sudo ln -s /var/lib/mediawiki /var/www/html/mediawiki
 ```
-Далі заходимо у браузер `ip/mediawiki`
+Далі заходимо у браузер по посиланню `ip/mediawiki`
 
 Конфігуруємо сервер та ***LocalSettings.php*** переміщуємо у `/var/www/html/mediawiki`
