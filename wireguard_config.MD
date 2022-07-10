@@ -30,7 +30,7 @@ systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 
 ```shell
 [Interface]
-PrivateKey = <віміст_файлу_користувач1_publickey>
+PrivateKey = <віміст_файлу_користувач1_privatekey>
 Address = 10.0.0.2/32
 DNS = 8.8.8.8
 
