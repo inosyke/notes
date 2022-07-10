@@ -4,13 +4,13 @@
 
 В окремій папці генеруємо ключі
 
-'''shell
+```shell
 wg genkey | tee <користувач1>_privatekey | wg pubkey | tee <користувач1>_publickey
 ```
 
 Додаємо конфігурацію користувача на сервері в файл wg0.conf
 
-'''shell
+```shell
 [Peer]
 PublicKey = <віміст_файлу_користувач1_publickey>
 AllowedIPs = <IP_в_віртуальній_локальній_мережі_клієнта>
@@ -18,7 +18,7 @@ AllowedIPs = <IP_в_віртуальній_локальній_мережі_кл�
 
 Перезагружаємо wireguard сервер
 
-'''shell
+```shell
 systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 ```
 
@@ -27,7 +27,7 @@ systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 
 Створюємо конфіг для клієнта client.conf
 
-'''shell
+```shell
 [Interface]
 PrivateKey = <віміст_файлу_користувач1_publickey>
 Address = 10.0.0.2/32
