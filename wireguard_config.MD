@@ -41,5 +41,6 @@ PersistentKeepalive = 20
 Тепер скачуємо [wireguard клієнт](https://www.wireguard.com/install/) та підтягуємо конфіг.
 
 
-Або ж для cli кидаємо конфіг у ʼsudo nano /etc/wireguard/wg0.confʼ
-Підняти тунель 'sudo wg-quick up wg0', погасити: `sudo wg-quick down wg0`
+Або ж для cli кидаємо конфіг у `sudo nano /etc/wireguard/wg0.conf`
+
+Підняти тунель ```sudo wg-quick up wg0```, погасити: ```sudo wg-quick down wg0```
