@@ -23,10 +23,7 @@ AllowedIPs = <IP_в_віртуальній_локальній_мережі_кл�
 systemctl restart wg-quick@wg0 && systemctl status wg-quick@wg0
 ```
 
-Тепер скачуємо [wireguard клієнт](https://www.wireguard.com/install/)
-
-
-Створюємо конфіг для клієнта client.conf
+## Створюємо конфіг для клієнта client.conf
 
 ```shell
 [Interface]
@@ -40,3 +37,9 @@ Endpoint = <SERVER-IP>:51830
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 20
 ```
+
+Тепер скачуємо [wireguard клієнт](https://www.wireguard.com/install/) та підтягуємо конфіг.
+
+
+Або ж для cli кидаємо конфіг у ʼsudo nano /etc/wireguard/wg0.confʼ
+Підняти тунель 'sudo wg-quick up wg0', погасити: `sudo wg-quick down wg0`
