@@ -10,5 +10,5 @@
 
 Щоб запустити потрібний нам профіль:
 ```bash
-hromium --profile-directory="необхідний_нам_профіль"
+сhromium --profile-directory="необхідний_нам_профіль"
 ```
