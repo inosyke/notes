@@ -21,7 +21,7 @@ pip install pyTelegramBotAPI
 pip3 install --upgrade pyTelegramBotAPI
 ```
 
-Реєструємо свого бота https://t.me/botfather/  @BotFatherу та надсилаємо про нього інформацію:
+Реєструємо свого бота https://t.me/botfather/ та надсилаємо про нього інформацію:
 `https://api.telegram.org/botYOUR-TOKEN/setWebhook?url=https://YOUR_DOMAIN:8443/YOUR-TOKEN/`
 
 Відкриваємо порт для боту `sudo ufw allow 8443`
